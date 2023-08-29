@@ -28,8 +28,10 @@
 - Fleet Management System Dispatcher at [PT. Bukit Asam Kreatif](https://brave.com/) - (Apr'21 - Dec'21)
 - Project Asistant Engineer - Network at [PT. SatnetCom](https://www.satnetcom.com/) - (March'19 - Apr'21)
 
-![Rizki's github stats](https://github-readme-stats.vercel.app/api?username=korizki&show_icons=true&hide_border=true)&nbsp;&nbsp;
+### My Stat's
+![My Stat's](https://github-readme-streak-stats.herokuapp.com/?user=korizki)
 ![Rizki's Language stats](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=korizki&layout=compact&langs_count=8&hide_border=true)
+![Rizki's github stats](https://github-readme-stats.vercel.app/api?username=korizki&show_icons=true&hide_border=true)&nbsp;&nbsp;
 <br />
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=korizki.korizki)
