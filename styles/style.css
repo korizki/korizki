@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*#474E68 #50577A #6B728E*/
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.4;
+}
+
+p {
+   color: #8c91aa;
+}
+
+a {
+   color: #25a2fb;
+   text-decoration: none;
+   transition: all 0.3s;
+}
+
+button {
+   transition: all 0.3s;
+}
+
+body {
+   display: flex;
+   background: #2d2e3a;
+   justify-content: center;
+   font-size: 14px;
+}
+
+body>div {
+   width: 100%;
+   background: #2f303f;
+   color: white;
+   padding: 2em 1.5em;
+}
+
+.fa-bars {
+   position: absolute;
+   right: 0;
+   transform: translateY(-0.3em);
+   font-size: 2em
+}
+
+.infoarea {
+   display: flex;
+   padding: 1em 0;
+}
+
+.infoarea>div {
+   flex: 1;
+}
+
+.infoarea>div>h4 {
+   font-size: 1.5em;
+}
+
+.header {
+   gap: 1.5em;
+   position: relative;
+   flex-direction: column;
+   display: flex;
+   gap: 2em
+}
+
+.header>div>h2 {
+   font-size: 2em;
+}
+
+.mtheader {
+   margin-top: 0.6em
+}
+
+.pp {
+   width: 7em;
+   border-radius: 1em
+}
+
+.fa-check-circle {
+   color: #25a2fb;
+   position: absolute;
+   background: white;
+   font-size: 1.2em;
+   transform: translate(-0.5em, 0);
+   outline: 0.2em solid #2d2e3a;
+   border-radius: 1em;
+}
+
+.footer {
+   padding: 2em 0;
+}
+
+.footer>div {
+   display: flex;
+   gap: 1.5em;
+   margin: 1em 0;
+}
+
+.footer i {
+   color: white !important;
+   font-size: 2em
+}
+
+.buttonarea {
+   padding: 1em 0;
+   display: flex;
+   gap: 1em;
+   align-items: center;
+}
+
+.buttonarea>button {
+   background: #25a2fb;
+   border-radius: 0.5em;
+   flex: 1;
+   border: none;
+   padding: 0.6em;
+   color: white;
+   font-size: 1.2em
+}
+
+.buttonarea>button:hover {
+   background: #1971af;
+   transform: translateY(0.1em);
+}
+
+.buttonarea>a {
+   background: #474E68;
+   color: white;
+   padding: 0.9em 1.5em;
+   border-radius: 0.7em;
+}
+
+.buttonarea>a:hover {
+   transform: translateY(0.1em);
+}
+
+.navs {
+   display: flex;
+   gap: 0.5em;
+   margin: 1em 0;
+   padding: 0.3em;
+   border-radius: 0.5em;
+   background: #474E68;
+}
+
+.navs>a {
+   padding: 0.75em 0.5em;
+   border-radius: 0.5em;
+   flex: 1;
+   color: #8c91aa;
+   text-align: center;
+}
+
+.navs>.active {
+   background: #2d2e3a;
+   color: white;
+}
+
+@media screen and (min-width: 768px) {
+   body>div {
+      width: 50%;
+   }
+}
