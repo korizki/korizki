@@ -59,7 +59,6 @@ const App = () => {
 const el = document.querySelector('#apps')
 const root = ReactDOM.createRoot(el)
 root.render(<App />)
-// education content
 const EducationContent = props => {
    return (
       <div>
