@@ -34,6 +34,7 @@ body>div {
    background: #2f303f;
    color: white;
    padding: 2em 1.5em;
+   padding-bottom: 0;
 }
 
 .fa-bars {
@@ -88,7 +89,7 @@ body>div {
 }
 
 .footer {
-   padding: 2em 0;
+   padding: 1em 0;
 }
 
 .footer>div {
@@ -140,7 +141,7 @@ body>div {
    gap: 0.5em;
    margin: 1em 0;
    padding: 0.3em;
-   border-radius: 0.5em;
+   border-radius: 0.7em;
    background: #474E68;
 }
 
@@ -153,8 +154,100 @@ body>div {
 }
 
 .navs>.active {
-   background: #2d2e3a;
+   background: #25a2fb;
    color: white;
+}
+
+.skill {
+   margin: 2em 0;
+}
+
+.skill>h3 {
+   font-size: 2em;
+}
+
+@keyframes showup {
+   from {
+      opacity: 0;
+      transform: translateY(0.5em)
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0em)
+   }
+}
+
+.edu {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+   padding: 1em 0;
+}
+
+.educard {
+   animation: showup 0.7s ease;
+   padding: 0.8em;
+   display: flex;
+   align-items: center;
+   gap: 1.5em;
+   border-radius: 0.5em;
+   background: #3c4256;
+   outline: 1px solid #464a58;
+}
+
+.educard>img {
+   padding: 0.7em;
+   border-radius: 0.5em;
+   background: white;
+}
+
+.educard a {
+   display: inline-block;
+   margin-bottom: 0.1em;
+}
+
+.educard>div>div {
+   margin-top: 0.5em;
+}
+
+.educard h4 {
+   font-size: 1.3em
+}
+
+.educard a {
+   color: white;
+}
+
+.skill {
+   margin: 5em 0;
+}
+
+.skill>div {
+   padding: 2em 0;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2em;
+}
+
+.skill>div>img {
+   height: 3em;
+   filter: grayscale(100%);
+}
+
+.next {
+   height: 1.5em !important;
+}
+
+.next,
+.lodash {
+   filter: invert(0.5) !important;
+}
+
+.skill i {
+   font-size: 3.5em;
+   color: rgb(125, 124, 124);
 }
 
 @media screen and (min-width: 768px) {
