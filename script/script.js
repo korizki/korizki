@@ -1,6 +1,6 @@
 const { useState, useEffect } = React
 const App = () => {
-   const [activeTab, setActiveTab] = useState(3)
+   const [activeTab, setActiveTab] = useState(2)
    const [listInfo, setListInfo] = useState([
       { title: 'Project', count: 15 },
       { title: 'Github Contr.', count: '> 2k' },
@@ -51,6 +51,9 @@ const App = () => {
          {
             activeTab == 3 ? (<EducationContent />) : false
          }
+         {
+            activeTab == 2 ? (<ExperienceContent />) : false
+         }
          <Technical />
          <Footer />
       </div>
@@ -61,6 +64,80 @@ const el = document.querySelector('#apps')
 const root = ReactDOM.createRoot(el)
 root.render(<App />)
 
+const ExperienceContent = () => {
+   const listExp = [
+      {
+         company: 'PT. Putra Perkasa Abadi',
+         posisi: 'System Developer (Front End Dev)',
+         periode: 'Aug 2022 - Now',
+         location: 'Kutai Kartanegara, East Kalimantan',
+         logo: 'ppa.png',
+         list: [
+            'Discussing with Group Leader for additional features or updates for existing Web Application - SS6 (Safe & Strong) Reporting System',
+            'Learning existing and new Tech Stack that used in Teamwork Application Web then suggesting tech features for optimizing',
+            'Code Maintaince includes fixing bug, write clean and readable code, and also doing test and make sure code running properly before deployment on Production repositories'
+         ]
+      },
+      {
+         company: 'PT. Bukit Asam Kreatif',
+         posisi: 'Fleet Management System Dispatcher',
+         location: 'Tanjung Enim, South Sumatera',
+         periode: 'Apr 2021 - Aug 2022',
+         logo: 'bak.png',
+         list: [
+            'Compile daily meeting reports and hourly Loader problems and report of mining production',
+            'Monitor and ensure the Fleet Management System devices (Vehicle Mount Computer) in the hauler unit (Belaz) is working properly using MineDispatch Application',
+            'Analyzing problems and performing maintenance activity for MineLink application and device by remote or direct on hand'
+         ]
+      },
+      {
+         company: 'PT. SatNetcom',
+         posisi: 'Project Asistant Engineer',
+         periode: 'Mar 2019 - Apr 2021',
+         location: 'Tanjung Enim, South Sumatera',
+         logo: 'snc.png',
+         list: [
+            'Ensure network availability on PIT / Minning Location for VMC in Loader (Shovel PC-3000) and Hauler (Belaz)',
+            'Perform installation software and maintenance hardware of VMC (Vehicle Mount computer) and Mobile Tower',
+            'Prepare daily work plans, monthly activity report, and ensuring All Production area are covered with BMSMinelink Network (Local Area Network)'
+         ]
+      },
+   ]
+   return (
+      <div className="outex">
+         {
+            listExp.map((it, index) => (
+               <React.Fragment>
+                  <div key={index} className="cardex">
+                     <div className="headex">
+                        <img src={`../assets/${it.logo}`} />
+                        <div>
+                           <h4>{it.company}</h4>
+                           <p className="blue"> {it.posisi}</p>
+                           <div className="secondsec">
+                              <p><i className="fas fa-map-marker-alt"></i> {it.location}</p>
+                              <p><i className="fas fa-calendar"></i> {it.periode}</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="jobtask">
+                        <h4>Responsibilities</h4>
+                        {
+                           it.list.map((data, index) => (
+                              <div key={index}>
+                                 <i className="fas fa-circle"></i>
+                                 <p >{data}</p>
+                              </div>
+                           ))
+                        }
+                     </div>
+                  </div>
+               </React.Fragment>
+            ))
+         }
+      </div>
+   )
+}
 const EducationContent = props => {
    const [listEdu, setListEdu] = useState([
       {

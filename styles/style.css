@@ -79,9 +79,9 @@ body>div {
 }
 
 .fa-check-circle {
-   color: #25a2fb;
+   background: black;
    position: absolute;
-   background: white;
+   color: white;
    font-size: 1.2em;
    transform: translate(-0.5em, 0);
    outline: 0.2em solid #2d2e3a;
@@ -185,6 +185,46 @@ body>div {
    padding: 1em 0;
 }
 
+@keyframes showright {
+   from {
+      opacity: 0;
+      transform: translateX(-1em)
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0em)
+   }
+}
+
+.cardex {
+   padding: 1.5em 0;
+   animation: showright 0.7s ease;
+}
+
+.cardex:last-child {
+   padding-bottom: 0;
+}
+
+.headex>div>h4 {
+   font-size: 1.5em;
+}
+
+.headex {
+   display: flex;
+   align-items: center;
+   gap: 1.5em;
+}
+
+.headex>img {
+   width: 4em;
+   padding: 0.4em;
+   height: 4em;
+   object-fit: cover;
+   border-radius: 1em;
+   background: white;
+}
+
 .educard {
    animation: showup 0.7s ease;
    padding: 0.8em;
@@ -202,9 +242,48 @@ body>div {
    background: white;
 }
 
+.jobtask {
+   padding: 1em 0;
+}
+
+.jobtask>h4 {
+   margin-top: 0.5em;
+   font-size: 1em;
+   margin-bottom: 0.5em;
+}
+
+.jobtask>div {
+   display: flex;
+   margin-bottom: 0.8em;
+   gap: 1em;
+   align-items: center;
+}
+
+.secondsec {
+   padding-top: 0.8em
+}
+
+.secondsec>p {
+   line-height: 1.5;
+}
+
+.secondsec>p>i {
+   display: inline-block;
+   margin-right: 0.5em;
+}
+
+.jobtask>div>i {
+   font-size: 0.6em;
+   color: #8c91aa;
+}
+
 .educard a {
    display: inline-block;
    margin-bottom: 0.1em;
+}
+
+.blue {
+   color: #25a2fb;
 }
 
 .educard>div>div {
