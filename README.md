@@ -34,4 +34,4 @@
 ![Rizki's github stats](https://github-readme-stats.vercel.app/api?username=korizki&show_icons=true&hide_border=true)&nbsp;&nbsp;
 <br />
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=korizki.korizki)
+<!-- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=korizki.korizki) -->
